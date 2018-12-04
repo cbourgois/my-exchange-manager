@@ -2,6 +2,7 @@ import angular from 'angular';
 
 import _ from 'lodash';
 
+import 'angular-ui-bootstrap';
 import 'angular-route';
 import 'angular-translate';
 import 'ovh-angular-apiv7';
@@ -14,6 +15,7 @@ angular.module('myExchangeManager', [
     'ovh-utils-angular',
     'pascalprecht.translate',
     'ngRoute',
+    'ui.bootstrap',
 ]);
 
 export default 'myExchangeManager';
