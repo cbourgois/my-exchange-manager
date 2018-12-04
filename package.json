@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "angular": "^1.7.5",
+    "ovh-angular-apiv7": "^1.2.8",
+    "ovh-api-services": "^3.22.0",
+    "ovh-module-exchange": "^9.1.2"
+  },
+  "devDependencies": {
+    "@ovh-ux/manager-webpack-config": "^3.0.0",
+    "lodash": "^4.17.11",
+    "webpack-merge": "^4.1.4"
+  }
+}
