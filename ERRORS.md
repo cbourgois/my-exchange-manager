@@ -235,3 +235,35 @@ trigger @ angular.js:3501
 ```
 
 
+# STEP 11
+
+## In browser
+
+```
+Uncaught Error: [$injector:modulerr] Failed to instantiate module myExchangeManager due to:
+Error: [$injector:modulerr] Failed to instantiate module Module.exchange due to:
+Error: [$injector:unpr] Unknown provider: $stateProvider
+
+
+https://errors.angularjs.org/1.7.5/$injector/modulerr?p0=myExchangeManager&p1=Error%3A%20%5B%24injector%3Amodulerr%5D%20Failed%20to%20instantiate%20module%20Module.exchange%20due%20to%3A%0AError%3A%20%5B%24injector%3Aunpr%5D%20Unknown%20provider%3A%20%24stateProvider%0A%0Ahttps%3A%2F%2Ferrors.angularjs.org%2F1.7.5%2F%24injector%2Fmodulerr%3Fp0%3DModule.exchange%26p1%3DError%253A%2520%255B%2524injector%253Aunpr%255D%2520Unknown%2520provider%253A%2520%2524stateProvider%250Ahttps%253A%252F%252Ferrors.angularjs.org%252F1.7.5%252F%2524injector%252Funpr%253Fp0%253D%252524stateProvider%250A%2520%2520%2520%2520at%2520eval%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A138%253A12)%250A%2520%2520%2520%2520at%2520eval%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A4905%253A19)%250A%2520%2520%2520%2520at%2520getService%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5065%253A32)%250A%2520%2520%2520%2520at%2520injectionArgs%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5090%253A58)%250A%2520%2520%2520%2520at%2520Object.invoke%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5114%253A18)%250A%2520%2520%2520%2520at%2520runInvokeQueue%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5011%253A35)%250A%2520%2520%2520%2520at%2520eval%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5021%253A11)%250A%2520%2520%2520%2520at%2520forEach%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A387%253A20)%250A%2520%2520%2520%2520at%2520loadModules%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5001%253A5)%250A%2520%2520%2520%2520at%2520eval%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5019%253A40)%0A%20%20%20%20at%20eval%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A138%3A12)%0A%20%20%20%20at%20eval%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A5041%3A15)%0A%20%20%20%20at%20forEach%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A387%3A20)%0A%20%20%20%20at%20loadModules%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A5001%3A5)%0A%20%20%20%20at%20eval%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A5019%3A40)%0A%20%20%20%20at%20forEach%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A387%3A20)%0A%20%20%20%20at%20loadModules%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A5001%3A5)%0A%20%20%20%20at%20createInjector%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A4918%3A19)%0A%20%20%20%20at%20doBootstrap%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A1942%3A20)%0A%20%20%20%20at%20bootstrap%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A1963%3A12)
+    at eval (angular.js:138)
+    at eval (angular.js:5041)
+    at forEach (angular.js:387)
+    at loadModules (angular.js:5001)
+    at createInjector (angular.js:4918)
+    at doBootstrap (angular.js:1942)
+    at bootstrap (angular.js:1963)
+    at angularInit (angular.js:1848)
+    at eval (angular.js:36216)
+    at HTMLDocument.trigger (angular.js:3501)
+(anonymous) @ angular.js:138
+(anonymous) @ angular.js:5041
+forEach @ angular.js:387
+loadModules @ angular.js:5001
+createInjector @ angular.js:4918
+doBootstrap @ angular.js:1942
+bootstrap @ angular.js:1963
+angularInit @ angular.js:1848
+(anonymous) @ angular.js:36216
+trigger @ angular.js:3501
+```

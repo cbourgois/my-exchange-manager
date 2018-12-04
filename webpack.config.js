@@ -2,6 +2,8 @@ const path = require('path');
 const merge = require('webpack-merge');
 const _ = require('lodash');
 
+const glob = require('glob');
+
 const { config } = require('@ovh-ux/manager-webpack-config')({
   template: './src/index.html',
   basePath: './src',
@@ -12,11 +14,18 @@ const { config } = require('@ovh-ux/manager-webpack-config')({
 
 });
 
+let bundles = {};
+// Module exchange
+bundles.exchange = [].concat(
+  glob.sync('./node_modules/ovh-module-exchange/src/exchange/**/*.module.js'),
+  glob.sync('./node_modules/ovh-module-exchange/src/exchange/**/!(*.module).js'),
+);
+
 // merge the configuration and export it
 module.exports = merge(config, {
   entry: _.assign({
     main: './src/index.js',
-  }),
+  }, bundles),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].bundle.js',

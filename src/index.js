@@ -10,12 +10,7 @@ import 'angular-translate';
 import 'ovh-angular-apiv7';
 import 'ovh-api-services';
 import '@ovh-ux/ovh-utils-angular';
-import 'ovh-module-exchange/src/exchange/exchange.module';
-import 'ovh-module-exchange/src/exchange/exchangeComponents.module';
-import 'ovh-module-exchange/src/exchange/exchangeControllers.module';
-import 'ovh-module-exchange/src/exchange/exchangeDirectives.module';
-import 'ovh-module-exchange/src/exchange/exchangeServices.module';
-import 'ovh-module-exchange/src/exchange/filter/filter.module';
+// import 'ovh-module-exchange/src/exchange/exchange.module';
 
 angular.module('myExchangeManager', [
     'Module.exchange',
