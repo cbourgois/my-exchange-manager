@@ -32,4 +32,12 @@ yarn add -D webpack-merge
 ```
 
 ## Errors
-[See erros Errors](ERRORS.md)
+[See Errors](ERRORS.md)
+
+
+
+## Added commands
+
+```sh
+yarn remove lodash && yarn add lodash
+```
