@@ -40,4 +40,5 @@ yarn add -D webpack-merge
 
 ```sh
 yarn remove lodash && yarn add lodash
+yarn add @ovh-ux/ovh-utils-angular
 ```

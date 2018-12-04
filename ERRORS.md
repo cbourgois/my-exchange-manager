@@ -85,3 +85,14 @@ https://errors.angularjs.org/1.7.5/$injector/modulerr?p0=myExchangeManager&p1=Er
     at eval (angular.js:36216)
     at HTMLDocument.trigger (angular.js:3501)
 ```
+
+# STEP 3
+
+## In webpack
+
+```
+Failed to compile.
+
+./node_modules/@ovh-ux/ovh-utils-angular/dist/ovh-utils-angular.js
+Module not found: Error: Can't resolve 'angular-translate' in '/Users/xxx/workspace/github/cbourgois/my-exchange-manager/node_modules/@ovh-ux/ovh-utils-angular/dist'
+```

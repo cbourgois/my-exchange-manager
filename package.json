@@ -3,6 +3,7 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
+    "@ovh-ux/ovh-utils-angular": "^14.0.0-alpha.1",
     "angular": "^1.7.5",
     "lodash": "^4.17.11",
     "ovh-angular-apiv7": "^1.2.8",
