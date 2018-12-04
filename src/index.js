@@ -2,6 +2,7 @@ import angular from 'angular';
 
 import _ from 'lodash';
 
+import '@ovh-ux/translate-async-loader';
 import '@uirouter/angularjs';
 import 'ng-ckeditor';
 import 'angular-sanitize';
@@ -17,8 +18,11 @@ angular
   .module('myExchangeManager', [
     'ui.router',
     'Module.exchange',
+    'translate-async-loader',
   ])
-  .config(($urlRouterProvider, $stateProvider) => {
+  .config(($translateProvider, $urlRouterProvider, $stateProvider) => {
+    $translateProvider.useLoader('asyncLoader');
+
     $stateProvider.state('app', {
       url: '/app',
       template: `<div><a ui-sref="app.microsoft.exchange.dedicated({organization: 'org', productId: 'pId'})">go to exchange</a></div>`,

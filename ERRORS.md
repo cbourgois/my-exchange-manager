@@ -303,3 +303,104 @@ https://errors.angularjs.org/1.7.5/$injector/unpr?p0=asyncLoaderProvider%20%3C-%
     at ResolveContext.getDependencies (resolveContext.js:180)
     at getResolvableDependencies (resolvable.js:78)
 ```
+
+# STEP 14
+
+## In browser
+
+```
+angular.js:13531 GET http://localhost:9000/exchange/exchange.html 404 (Not Found)
+(anonymous) @ angular.js:13531
+sendReq @ angular.js:13257
+serverRequest @ angular.js:12998
+processQueue @ angular.js:17914
+(anonymous) @ angular.js:17962
+$digest @ angular.js:19075
+$apply @ angular.js:19463
+(anonymous) @ angular.js:21564
+completeTask @ angular.js:21194
+(anonymous) @ angular.js:6790
+setTimeout (async)
+Browser.self.defer @ angular.js:6788
+timeout @ angular.js:21554
+(anonymous) @ stateDirectives.js:55
+defaultHandlerWrapper @ angular.js:3805
+eventHandler @ angular.js:3793
+angular.js:15536 Error: [$templateRequest:tpload] Failed to load template: exchange/exchange.html (HTTP status: 404 Not Found)
+https://errors.angularjs.org/1.7.5/$templateRequest/tpload?p0=exchange%2Fexchange.html&p1=404&p2=Not%20Found
+    at eval (angular.js:138)
+    at handleError (angular.js:21360)
+    at processQueue (angular.js:17914)
+    at eval (angular.js:17962)
+    at Scope.$digest (angular.js:19075)
+    at Scope.$apply (angular.js:19463)
+    at done (angular.js:13312)
+    at completeRequest (angular.js:13569)
+    at XMLHttpRequest.requestLoaded (angular.js:13474)
+(anonymous) @ angular.js:15536
+(anonymous) @ angular.js:11815
+handleError @ angular.js:21364
+processQueue @ angular.js:17914
+(anonymous) @ angular.js:17962
+$digest @ angular.js:19075
+$apply @ angular.js:19463
+done @ angular.js:13312
+completeRequest @ angular.js:13569
+requestLoaded @ angular.js:13474
+load (async)
+(anonymous) @ angular.js:13457
+sendReq @ angular.js:13257
+serverRequest @ angular.js:12998
+processQueue @ angular.js:17914
+(anonymous) @ angular.js:17962
+$digest @ angular.js:19075
+$apply @ angular.js:19463
+(anonymous) @ angular.js:21564
+completeTask @ angular.js:21194
+(anonymous) @ angular.js:6790
+setTimeout (async)
+Browser.self.defer @ angular.js:6788
+timeout @ angular.js:21554
+(anonymous) @ stateDirectives.js:55
+defaultHandlerWrapper @ angular.js:3805
+eventHandler @ angular.js:3793
+stateService.js:51 Transition Rejection($id: 0 type: 6, message: The transition errored, detail: Error: [$templateRequest:tpload] Failed to load template: exchange/exchange.html (HTTP status: 404 Not Found)
+https://errors.angularjs.org/1.7.5/$templateRequest/tpload?p0=exchange%2Fexchange.html&p1=404&p2=Not%20Found)
+$defaultErrorHandler @ stateService.js:51
+(anonymous) @ stateService.js:379
+processQueue @ angular.js:17914
+(anonymous) @ angular.js:17962
+$digest @ angular.js:19075
+$apply @ angular.js:19463
+done @ angular.js:13312
+completeRequest @ angular.js:13569
+requestLoaded @ angular.js:13474
+load (async)
+(anonymous) @ angular.js:13457
+sendReq @ angular.js:13257
+serverRequest @ angular.js:12998
+processQueue @ angular.js:17914
+(anonymous) @ angular.js:17962
+$digest @ angular.js:19075
+$apply @ angular.js:19463
+(anonymous) @ angular.js:21564
+completeTask @ angular.js:21194
+(anonymous) @ angular.js:6790
+setTimeout (async)
+Browser.self.defer @ angular.js:6788
+timeout @ angular.js:21554
+(anonymous) @ stateDirectives.js:55
+defaultHandlerWrapper @ angular.js:3805
+eventHandler @ angular.js:3793
+stateService.js:53 Error: [$templateRequest:tpload] Failed to load template: exchange/exchange.html (HTTP status: 404 Not Found)
+https://errors.angularjs.org/1.7.5/$templateRequest/tpload?p0=exchange%2Fexchange.html&p1=404&p2=Not%20Found
+    at eval (angular.js:138)
+    at handleError (angular.js:21360)
+    at processQueue (angular.js:17914)
+    at eval (angular.js:17962)
+    at Scope.$digest (angular.js:19075)
+    at Scope.$apply (angular.js:19463)
+    at done (angular.js:13312)
+    at completeRequest (angular.js:13569)
+    at XMLHttpRequest.requestLoaded (angular.js:13474)
+```

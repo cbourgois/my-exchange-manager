@@ -46,4 +46,6 @@ yarn add angular-route
 yarn add angular-ui-bootstrap
 yarn add angular-sanitize
 yarn add ng-ckeditor
+yarn add @uirouter/angularjs
+yarn add @ovh-ux/translate-async-loader
 ```
