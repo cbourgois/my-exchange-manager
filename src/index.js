@@ -19,12 +19,6 @@ import 'ovh-module-exchange/src/exchange/filter/filter.module';
 
 angular.module('myExchangeManager', [
     'Module.exchange',
-    'ovh-utils-angular',
-    'pascalprecht.translate',
-    'ngRoute',
-    'ui.bootstrap',
-    'ngSanitize',
-    'ng.ckeditor',
 ]);
 
 export default 'myExchangeManager';
