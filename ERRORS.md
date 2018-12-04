@@ -267,3 +267,39 @@ angularInit @ angular.js:1848
 (anonymous) @ angular.js:36216
 trigger @ angular.js:3501
 ```
+
+# STEP 13
+
+## In browser
+
+```
+Transition Rejection($id: 0 type: 6, message: The transition errored, detail: Error: [$injector:unpr] Unknown provider: asyncLoaderProvider <- asyncLoader
+https://errors.angularjs.org/1.7.5/$injector/unpr?p0=asyncLoaderProvider%20%3C-%20asyncLoader)
+$defaultErrorHandler @ stateService.js:51
+(anonymous) @ stateService.js:379
+processQueue @ angular.js:17914
+(anonymous) @ angular.js:17962
+$digest @ angular.js:19075
+$apply @ angular.js:19463
+(anonymous) @ angular.js:21564
+completeTask @ angular.js:21194
+(anonymous) @ angular.js:6790
+setTimeout (async)
+Browser.self.defer @ angular.js:6788
+timeout @ angular.js:21554
+(anonymous) @ stateDirectives.js:55
+defaultHandlerWrapper @ angular.js:3805
+eventHandler @ angular.js:3793
+stateService.js:53 Error: [$injector:unpr] Unknown provider: asyncLoaderProvider <- asyncLoader
+https://errors.angularjs.org/1.7.5/$injector/unpr?p0=asyncLoaderProvider%20%3C-%20asyncLoader
+    at eval (angular.js:138)
+    at eval (angular.js:4905)
+    at Object.getService [as get] (angular.js:5065)
+    at eval (angular.js:4910)
+    at Object.getService [as get] (angular.js:5065)
+    at UIInjectorImpl.getNative (resolveContext.js:211)
+    at getDependency (resolveContext.js:174)
+    at Array.map (<anonymous>)
+    at ResolveContext.getDependencies (resolveContext.js:180)
+    at getResolvableDependencies (resolvable.js:78)
+```

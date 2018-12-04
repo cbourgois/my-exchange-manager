@@ -17,6 +17,18 @@ angular
   .module('myExchangeManager', [
     'ui.router',
     'Module.exchange',
-  ]);
+  ])
+  .config(($urlRouterProvider, $stateProvider) => {
+    $stateProvider.state('app', {
+      url: '/app',
+      template: `<div><a ui-sref="app.microsoft.exchange.dedicated({organization: 'org', productId: 'pId'})">go to exchange</a></div>`,
+    });
+    $stateProvider.state('app.microsoft', {
+      url: '/microsoft',
+    });
+
+    $urlRouterProvider.otherwise('/app');
+  })
+
 
 export default 'myExchangeManager';
