@@ -2,6 +2,7 @@ import angular from 'angular';
 
 import _ from 'lodash';
 
+import 'angular-sanitize';
 import 'angular-ui-bootstrap';
 import 'angular-route';
 import 'angular-translate';
@@ -16,6 +17,7 @@ angular.module('myExchangeManager', [
     'pascalprecht.translate',
     'ngRoute',
     'ui.bootstrap',
+    'ngSanitize',
 ]);
 
 export default 'myExchangeManager';

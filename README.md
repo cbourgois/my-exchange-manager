@@ -44,4 +44,5 @@ yarn add @ovh-ux/ovh-utils-angular
 yarn add angular-translate
 yarn add angular-route
 yarn add angular-ui-bootstrap
+yarn add angular-sanitize
 ```
