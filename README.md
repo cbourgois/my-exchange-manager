@@ -45,4 +45,5 @@ yarn add angular-translate
 yarn add angular-route
 yarn add angular-ui-bootstrap
 yarn add angular-sanitize
+yarn add ng-ckeditor
 ```

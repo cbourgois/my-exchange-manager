@@ -2,6 +2,7 @@ import angular from 'angular';
 
 import _ from 'lodash';
 
+import 'ng-ckeditor';
 import 'angular-sanitize';
 import 'angular-ui-bootstrap';
 import 'angular-route';
@@ -18,6 +19,7 @@ angular.module('myExchangeManager', [
     'ngRoute',
     'ui.bootstrap',
     'ngSanitize',
+    'ng.ckeditor',
 ]);
 
 export default 'myExchangeManager';
