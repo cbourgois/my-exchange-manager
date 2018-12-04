@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "@ovh-ux/ovh-utils-angular": "^14.0.0-alpha.1",
+    "@uirouter/angularjs": "^1.0.20",
     "angular": "^1.7.5",
     "angular-route": "^1.7.5",
     "angular-sanitize": "^1.7.5",

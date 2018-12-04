@@ -2,6 +2,7 @@ import angular from 'angular';
 
 import _ from 'lodash';
 
+import '@uirouter/angularjs';
 import 'ng-ckeditor';
 import 'angular-sanitize';
 import 'angular-ui-bootstrap';
@@ -12,8 +13,10 @@ import 'ovh-api-services';
 import '@ovh-ux/ovh-utils-angular';
 // import 'ovh-module-exchange/src/exchange/exchange.module';
 
-angular.module('myExchangeManager', [
+angular
+  .module('myExchangeManager', [
+    'ui.router',
     'Module.exchange',
-]);
+  ]);
 
 export default 'myExchangeManager';
