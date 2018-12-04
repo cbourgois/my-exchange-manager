@@ -11,7 +11,11 @@ const { config } = require('@ovh-ux/manager-webpack-config')({
     './node_modules',
   ],
   root: path.resolve(__dirname, './src/app'),
-
+  assets: {
+    files: [
+      { from: path.resolve(__dirname, './node_modules/ovh-module-exchange/src/exchange/**/*.html'), context: 'node_modules/ovh-module-exchange/src' },
+    ],
+  },
 });
 
 let bundles = {};

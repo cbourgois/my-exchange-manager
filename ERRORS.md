@@ -404,3 +404,24 @@ https://errors.angularjs.org/1.7.5/$templateRequest/tpload?p0=exchange%2Fexchang
     at completeRequest (angular.js:13569)
     at XMLHttpRequest.requestLoaded (angular.js:13474)
 ```
+
+
+# STEP 15
+
+## In browser
+
+```
+angular.js:15536 Error: [$injector:unpr] Unknown provider: WucApiProvider <- WucApi <- APIExchange <- Exchange
+https://errors.angularjs.org/1.7.5/$injector/unpr?p0=WucApiProvider%20%3C-%20WucApi%20%3C-%20APIExchange%20%3C-%20Exchange
+    at eval (angular.js:138)
+    at eval (angular.js:4905)
+    at Object.getService [as get] (angular.js:5065)
+    at eval (angular.js:4910)
+    at getService (angular.js:5065)
+    at injectionArgs (angular.js:5090)
+    at Object.instantiate (angular.js:5134)
+    at Object.eval (angular.js:4973)
+    at Object.invoke (angular.js:5122)
+    at Object.enforcedReturnValue [as $get] (angular.js:4957) "<div data-ui-view="" class="ng-scope">"
+```
+
