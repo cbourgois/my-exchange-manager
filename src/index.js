@@ -2,6 +2,7 @@ import angular from 'angular';
 
 import _ from 'lodash';
 
+import '@ovh-ux/web-universe-components';
 import '@ovh-ux/translate-async-loader';
 import '@uirouter/angularjs';
 import 'ng-ckeditor';

@@ -425,3 +425,23 @@ https://errors.angularjs.org/1.7.5/$injector/unpr?p0=WucApiProvider%20%3C-%20Wuc
     at Object.enforcedReturnValue [as $get] (angular.js:4957) "<div data-ui-view="" class="ng-scope">"
 ```
 
+# STEP 15
+
+## In webpack
+
+```
+ ERROR  Failed to compile with 3 errors                                                             09:10:48
+
+These dependencies were not found:
+
+* script-loader!@ovh-ux/ovh-utils-angular/bin/ovh-utils-angular.min.js in ./node_modules/@ovh-ux/web-univers
+e-components/dist/umd/web-universe-components.js
+* script-loader!@ovh-ux/ovh-utils-angular/lib/core.js in ./node_modules/@ovh-ux/web-universe-components/dist
+/umd/web-universe-components.js
+* script-loader!df-tab-menu/build/df-tab-menu.min.js in ./node_modules/@ovh-ux/web-universe-components/dist/
+umd/web-universe-components.js
+
+To install them, you can run: npm install --save script-loader!@ovh-ux/ovh-utils-angular/bin/ovh-utils-angul
+ar.min.js script-loader!@ovh-ux/ovh-utils-angular/lib/core.js script-loader!df-tab-menu/build/df-tab-menu.mi
+n.js
+```
