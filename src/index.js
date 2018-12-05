@@ -2,6 +2,7 @@ import angular from 'angular';
 
 import _ from 'lodash';
 
+import 'df-tab-menu/build/df-tab-menu.min';
 import '@ovh-ux/web-universe-components';
 import '@ovh-ux/translate-async-loader';
 import '@uirouter/angularjs';

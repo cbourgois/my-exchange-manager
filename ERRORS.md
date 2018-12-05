@@ -445,3 +445,44 @@ To install them, you can run: npm install --save script-loader!@ovh-ux/ovh-utils
 ar.min.js script-loader!@ovh-ux/ovh-utils-angular/lib/core.js script-loader!df-tab-menu/build/df-tab-menu.mi
 n.js
 ```
+
+# STEP 16
+
+## In browser
+
+```
+[Script Loader] ReferenceError: $ is not defined
+    at a (eval at module.exports (webpack:///./node_modules/script-loader/addScript.js?), <anonymous>:1:17388)
+    at eval (eval at module.exports (webpack:///./node_modules/script-loader/addScript.js?), <anonymous>:1:18052)
+    at eval (eval at module.exports (webpack:///./node_modules/script-loader/addScript.js?), <anonymous>:1:18060)
+    at eval (<anonymous>)
+    at module.exports (webpack:///./node_modules/script-loader/addScript.js?:20)
+    at eval (webpack:///./node_modules/@ovh-ux/ovh-utils-angular/bin/ovh-utils-angular.min.js?./node_modules/script-loader:1)
+    at Object../node_modules/script-loader/index.js!./node_modules/@ovh-ux/ovh-utils-angular/bin/ovh-utils-angular.min.js (vendor.50d55a722233c94bc9bc.bundle.js:4283)
+    at __webpack_require__ (main.c5326b0c8251180736d7.bundle.js:79)
+    at eval (webpack:///./node_modules/@ovh-ux/web-universe-components/dist/umd/web-universe-components.js?:2)
+    at eval (webpack:///./node_modules/@ovh-ux/web-universe-components/dist/umd/web-universe-components.js?:4)
+log @ webpack:///./node_modules/script-loader/addScript.js?:8
+angular-locale_fr-fr.js:1 Failed to load resource: the server responded with a status of 404 (Not Found)
+localhost/:1 Refused to execute script from 'http://localhost:9000/resources/angular/i18n/angular-locale_fr-fr.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.
+angular-locale_fr-fr.js:1 Failed to load resource: the server responded with a status of 404 (Not Found)
+localhost/:1 Refused to execute script from 'http://localhost:9000/resources/angular/i18n/angular-locale_fr-fr.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.
+webpack:///./node_modules/angular/angular.js?:5034 Uncaught Error: [$injector:modulerr] Failed to instantiate module myExchangeManager due to:
+Error: [$injector:modulerr] Failed to instantiate module Module.exchange due to:
+Error: [$injector:modulerr] Failed to instantiate module ngSanitize due to:
+TypeError: lowercase is not a function
+    at arrayToMap (webpack:///./node_modules/angular-sanitize/angular-sanitize.js?:417:27)
+    at stringToMap (webpack:///./node_modules/angular-sanitize/angular-sanitize.js?:411:12)
+    at new $SanitizeProvider (webpack:///./node_modules/angular-sanitize/angular-sanitize.js?:389:18)
+    at Object.instantiate (webpack:///./node_modules/angular/angular.js?:5132:14)
+    at provider (webpack:///./node_modules/angular/angular.js?:4940:36)
+    at Object.eval [as provider] (webpack:///./node_modules/angular/angular.js?:4932:16)
+    at runInvokeQueue (webpack:///./node_modules/angular/angular.js?:5004:35)
+    at eval (webpack:///./node_modules/angular/angular.js?:5013:11)
+    at forEach (webpack:///./node_modules/angular/angular.js?:418:20)
+    at loadModules (webpack:///./node_modules/angular/angular.js?:4994:5)
+
+
+https://errors.angularjs.org/1.6.10/$injector/modulerr?p0=myExchangeManager&p1=Error%3A%20%5B%24injector%3Amodulerr%5D%20Failed%20to%20instantiate%20module%20Module.exchange%20due%20to%3A%0AError%3A%20%5B%24injector%3Amodulerr%5D%20Failed%20to%20instantiate%20module%20ngSanitize%20due%20to%3A%0ATypeError%3A%20lowercase%20is%20not%20a%20function%0A%20%20%20%20at%20arrayToMap%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular-sanitize%2Fangular-sanitize.js%3F%3A417%3A27)%0A%20%20%20%20at%20stringToMap%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular-sanitize%2Fangular-sanitize.js%3F%3A411%3A12)%0A%20%20%20%20at%20new%20%24SanitizeProvider%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular-sanitize%2Fangular-sanitize.js%3F%3A389%3A18)%0A%20%20%20%20at%20Object.instantiate%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A5132%3A14)%0A%20%20%20%20at%20provider%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A4940%3A36)%0A%20%20%20%20at%20Object.eval%20%5Bas%20provider%5D%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A4932%3A16)%0A%20%20%20%20at%20runInvokeQueue%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A5004%3A35)%0A%20%20%20%20at%20eval%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A5013%3A11)%0A%20%20%20%20at%20forEach%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A418%3A20)%0A%20%20%20%20at%20loadModules%20(webpack%3A%2F%2F%2F.%2Fnode_modules%2Fangular%2Fangular.js%3F%3A4994%3A5)%0A%0Ahttps%3A%2F%2Ferrors.angularjs.org%2F1.6.10%2F%24injector%2Fmodulerr%3Fp0%3DModule.exchange%26p1%3DError%253A%2520%255B%2524injector%253Amodulerr%255D%2520Failed%2520to%2520instantiate%2520module%2520ngSanitize%2520due%2520to%253A%250ATypeError%253A%2520lowercase%2520is%2520not%2520a%2520function%250A%2520%2520%2520%2520at%2520arrayToMap%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular-sanitize%252Fangular-sanitize.js%253F%253A417%253A27)%250A%2520%2520%2520%2520at%2520stringToMap%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular-sanitize%252Fangular-sanitize.js%253F%253A411%253A12)%250A%2520%2520%2520%2520at%2520new%2520%2524SanitizeProvider%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular-sanitize%252Fangular-sanitize.js%253F%253A389%253A18)%250A%2520%2520%2520%2520at%2520Object.instantiate%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5132%253A14)%250A%2520%2520%2520%2520at%2520provider%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A4940%253A36)%250A%2520%2520%2520%2520at%2520Object.eval%2520%255Bas%2520provider%255D%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A4932%253A16)%250A%2520%2520%2520%2520at%2520runInvokeQueue%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5004%253A35)%250A%2520%2520%2520%2520at%2520eval%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A5013%253A11)%250A%2520%2520%2520%2520at%2520forEach%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A418%253A20)%250A%2520%2520%2520%2520at%2520loadModules%2520(webpack%253A%252F%252F%252F.%252Fnode_modules%252Fangular%252Fangular.js%253F%253A4994%253A5)%250Ahttps%253A%252F%252Ferrors.angularjs.org%252F1.6.10%252F%2524injector%252Fmodulerr%253Fp0%253DngSanitize%2526p1%253DTypeError%25253A%252520lowercase%252520is%252520not%252520a%252520function%25250A%252520%252520%252520%252520at%252520arrayToMap%252520(webpack%25253A%25252F%25252F%25252F.%25252Fnode_modules%25252Fangular-sanitize%25252Fangular-sanitize.js%25253F%25253A417%25253A27)%25250A%252520%252520%252520%252520at%252520stringToMap%252520(webpack%25253A%25252F%25252F%25252F.%25252Fnode_modules%25252Fangular-sanitize%25252Fangular-sanitize.js%2525
+:9000/favicon.ico:1 Failed to load resource: the server responded with a status of 404 (Not Found)
+```

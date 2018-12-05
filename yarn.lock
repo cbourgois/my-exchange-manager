@@ -754,16 +754,12 @@
     request "^2.88.0"
     webpack-dev-server "^3.1.9"
 
-"@ovh-ux/ovh-utils-angular@^14.0.0-alpha.1":
-  version "14.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@ovh-ux/ovh-utils-angular/-/ovh-utils-angular-14.0.0-alpha.1.tgz#8f29f648a258ae0d7753fb9e1896b863364a5af1"
-  integrity sha512-tVesMARNWjArQXaE7qBT69OOD/e4yxuHZ9xgBTqraRzM5NsZ3ETHU65aKypV+EfoFqsCkqUvEJ/6ErmuysP38w==
-  dependencies:
-    "@ovh-ux/translate-async-loader" "^1.0.4"
-    filesize "^3.6.1"
-    lodash "^4.17.11"
+"@ovh-ux/ovh-utils-angular@^13.0.2":
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/@ovh-ux/ovh-utils-angular/-/ovh-utils-angular-13.0.2.tgz#02fa3eb989537a0aeee7888d12443cca0ff552d6"
+  integrity sha512-+dHN29j7xwU/xx2hfQeZYQad003JIe43FhyZfUjZ6mw/oRPt1Sg1Gi6YSmSKLI6UkmJ0Af9d6NEglP2GLK+Rdg==
 
-"@ovh-ux/translate-async-loader@^1.0.4", "@ovh-ux/translate-async-loader@^1.0.7":
+"@ovh-ux/translate-async-loader@^1.0.7":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@ovh-ux/translate-async-loader/-/translate-async-loader-1.0.8.tgz#7cbdc3dfed1042f511206ff6bb9f14c33b8406ba"
   integrity sha512-8yEhPeRTSxtEO9ODXRYZw6pzRQiV5ULCTi8mIzt39m/b9N2TcIF4ILTPsaa8xpE4npHKa/iYgL9z0HJUFi2LGQ==
@@ -2429,6 +2425,11 @@ detect-node@^2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.4.tgz#014ee8f8f669c5c58023da64b8179c083a28c46c"
   integrity sha512-ZIzRpLJrOj7jjP2miAtgqIfmzbxa4ZOr5jJc601zklsfEx9oTzmmj2nVpIPRpNlRTIh8lc1kyViIY7BWSGNmKw==
+
+df-tab-menu@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/df-tab-menu/-/df-tab-menu-0.3.1.tgz#363a76486ab3de25dc1709c3f0c2cb429574108c"
+  integrity sha1-Njp2SGqz3iXcFwnD8MLLQpV0EIw=
 
 diffie-hellman@^5.0.0:
   version "5.0.3"
